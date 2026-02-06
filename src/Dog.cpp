@@ -6,6 +6,16 @@ VarSpeedServo FRW; VarSpeedServo FRE; VarSpeedServo FRS; //Front right servo ass
 VarSpeedServo BRW; VarSpeedServo BRE; VarSpeedServo BRS; //Back right servo assignments
 VarSpeedServo BLW; VarSpeedServo BLE; VarSpeedServo BLS; //Back left servo assignments
 
+void math(int ax1, int ax2, int ax3, int ax4);
+void walk();
+void cartesian(double x, double y, double s, int leg);
+void coldstart();
+void wrist(int d1, int d2, int d3, int d4, int speed, int wait);
+void elbow(int d1, int d2, int d3, int d4, int speed, int wait);
+void shoulder(int d1, int d2, int d3, int d4, int speed, int wait);
+void get_remote_data();
+int read_pins(int pin);
+
 double l1 = 110.0;     //Length of upper arm
 double l2 = 137.0;     //Length of lower arm
 double h = l1 + l2;    //Length of arm if fully extended
@@ -277,7 +287,6 @@ void cartesian(double x, double y, double s, int leg) {
   }
   return;
 }
-
 
 //Always initial read, attachment and assignment
 void coldstart() {
