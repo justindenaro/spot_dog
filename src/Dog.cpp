@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include <VarSpeedServo.h>
 
 VarSpeedServo FLW; VarSpeedServo FLE; VarSpeedServo FLS; //Front left servo assignments
