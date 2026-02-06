@@ -20,6 +20,7 @@ void setup() {
   senddata();   //Sends all data initally to create gsv data
 }
 
+
 void loop() {
   //Reads all 6 joystick values
   //Only assigns joystick readings to axis vector if
