@@ -197,11 +197,11 @@ void walk() {
       //delay(100);
 
       // No forced wait for elbow since it's first to move
-      elbow(de[0], de[1], de[2], de[3], s, 0);    //Move elbows
+      elbow(de[0], de[1], de[2], de[3], speed, 0);    //Move elbows
       //delay(200);
 
       // Forced wait for wrist to ensure movements complete
-      wrist(dw[0], dw[1], dw[2], dw[3], s, 1);    //Move wrist
+      wrist(dw[0], dw[1], dw[2], dw[3], speed, 1);    //Move wrist
       //delay(200);
       stroke++;
     } while (stroke < 9);
